@@ -81,3 +81,15 @@ footer a {
 ::-webkit-scrollbar-thumb:hover {
     background: #aeaeb1;
 }
+
+@media (max-width: 900px) {
+    header {
+        font-size: 20px;
+    }
+    .cards {
+        padding: 0 30px;
+    }
+    .card img {
+        max-width: 300px;
+    }
+}
