@@ -3,93 +3,107 @@
 @import url("https://fonts.googleapis.com/css2?family=Limelight&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body,
 html {
-    width: 100%;
-    height: 100%;
-    background: #fff;
+  width: 100%;
+  height: 100%;
+  background: #fff;
 }
 
 header {
-    line-height: 100px;
-    color: #fff;
-    background: #817f7f;
-    padding: 20px 50px;
-    box-shadow: 13px 1px 10px #d4bdbd;
-    text-align: center;
-    font-family: "Limelight", cursive;
-    text-transform: uppercase;
-    font-size: 30px;
+  line-height: 100px;
+  color: #fff;
+  background: #817f7f;
+  padding: 20px 50px;
+  box-shadow: 13px 1px 10px #d4bdbd;
+  text-align: center;
+  font-family: "Limelight", cursive;
+  text-transform: uppercase;
+  font-size: 30px;
 }
 
 .container {
-    margin: 20px 0;
-    font-family: "Yanone Kaffeesatz";
+  margin: 20px 0;
+  font-family: "Yanone Kaffeesatz";
 }
 
 .cards {
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  text-align: center;
+  align-items: baseline;
+  align-content: center;
+  width: 100%;
 }
 
 .card img {
-    width: 400px;
+  width: 80%;
+  height: 50vh;
+  object-fit: cover;
 }
 
 .title {
-    margin: 20px 0 15px;
-    font-size: 30px;
+  margin: 20px 0 15px;
+  font-size: 30px;
 }
 
 .description {
-    font-size: 18px;
+  font-size: 18px;
 }
 
-.card + .card {
-    margin-top: 50px;
+.card {
+  margin-top: 50px;
+  flex: 50%;
 }
 
 footer {
-    width: 100%;
-    height: 55px;
-    line-height: 55px;
-    background: #817f7f;
-    text-align: center;
-    font-family: "Yanone Kaffeesatz";
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+  background: #817f7f;
+  text-align: center;
+  font-family: "Yanone Kaffeesatz";
 }
 
 footer a {
-    color: #fff;
+  color: #fff;
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #000;
+  background: #000;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(223, 222, 222);
+  background: rgb(223, 222, 222);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #aeaeb1;
+  background: #aeaeb1;
 }
 
 @media (max-width: 900px) {
-    header {
-        font-size: 20px;
-    }
-    .cards {
-        padding: 0 30px;
-    }
-    .card img {
-        max-width: 300px;
-    }
+  header {
+    font-size: 20px;
+  }
+
+  .card {
+    flex: 80%;
+  }
+  .cards {
+    padding: 0 30px;
+  }
+  .card img {
+    max-width: 600px;
+    max-height: 200px;
+  }
 }
