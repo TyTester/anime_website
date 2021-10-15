@@ -15,16 +15,19 @@ html {
     background: #fff;
 }
 
-header {
+.container-heading {
     line-height: 100px;
     color: #fff;
-    background: #817f7f;
-    padding: 20px 50px;
-    box-shadow: 13px 1px 10px #d4bdbd;
+    padding: 20px 50px; 
     text-align: center;
     font-family: "Limelight", cursive;
     text-transform: uppercase;
     font-size: 30px;
+    border-radius: 70px;
+    background: #ba8787;
+    box-shadow:  20px 20px 34px #6a4d4d,
+             -20px -20px 34px #ffc1c1;
+    margin: 5px 30%;
 }
 
 .container {
@@ -61,15 +64,20 @@ header {
 
 footer {
     width: 100%;
-    height: 55px;
-    line-height: 55px;
-    background: #817f7f;
+    line-height: 30px;
+    background: #ba8787;
     text-align: center;
     font-family: "Yanone Kaffeesatz";
+    padding: 20px 0px;
 }
 
 footer a {
     color: #fff;
+    font-size:30px
+}
+
+footer small {
+    font-size:20px;
 }
 
 ::-webkit-scrollbar {
@@ -89,8 +97,9 @@ footer a {
 }
 
 @media (max-width: 900px) {
-    header {
-        font-size: 20px;
+    .container-heading {
+        margin: 5px 5%;
+        line-height: 35px;
     }
     .cards {
         padding: 0 30px;
