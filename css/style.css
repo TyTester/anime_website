@@ -53,6 +53,13 @@ html {
     object-fit: cover;
 }
 
+.card img:hover {
+    width: 450px;
+    height: 350px;
+    border: 10px solid black;
+    transition: height 0.5s, width 0.5s;
+}
+
 .title {
     margin: 20px 0 15px;
     font-size: 30px;
